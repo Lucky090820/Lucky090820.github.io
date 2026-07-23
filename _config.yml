@@ -1,0 +1,87 @@
+# ============================================
+# Hexo 根配置 _config.yml
+# 主题：AnZhiyu | 部署：GitHub Pages (Actions)
+# ============================================
+
+# 站点信息
+title: Lucky's Blog
+subtitle: '困意如潮水般涌来 🌊'
+description: '一个二次元风格的个人博客，记录生活与技术'
+keywords:
+  - Hexo
+  - AnZhiyu
+  - 博客
+  - 二次元
+  - 技术
+author: liudongming
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+url: https://Lucky090820.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# 主题
+theme: anzhiyu
+
+# 部署（GitHub Pages via Actions，不需要 hexo-deployer）
+deploy: []
+
+# 文章
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  rel: external nofollow noopener
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# 目录
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# 分页
+per_page: 10
+pagination_dir: page
+
+# 搜索
+search:
+  path: search.xml
+  field: post
+
+# 插件
+plugins: []
+
+# 杂项
+disable_nunjucks: false
+meta_generator: true
+
+# 数学公式
+math:
+  enable: true
+  engine: mathjax
+  load: async
+  mhchem: true

@@ -1,0 +1,241 @@
+# ============================================
+# AnZhiyu 主题配置 _config.anzhiyu.yml
+# 覆盖主题默认配置，更新主题不丢失设置
+# ============================================
+
+# ========== 主题色 ==========
+theme_color:
+  enable: true
+  main: "#7B68EE"
+  dark_main: "#FF6B9D"
+  paginator: "#7B68EE"
+  button_hover: "#9B89FF"
+  text_selection: "#7B68EE"
+  light_bg_color: "#f5f5fa"
+  dark_bg_color: "#1a1a2e"
+  mask_color: "rgba(123,104,238,0.1)"
+
+# ========== 暗黑模式 ==========
+darkmode:
+  enable: true
+  default: auto
+  flag: /img/dark.png
+  sun: /img/sun.png
+  moon: /img/moon.png
+
+# ========== 头像 ==========
+avatar:
+  img: /img/avatar/avatar.jpg
+  effect: true
+  shape: circle
+  rounded: 8
+
+# ========== 首页封面 ==========
+banner:
+  tips: "困意如潮水般涌来"
+  title: "Lucky's Blog"
+  image: /img/banner/banner.jpg
+  link: /
+  cover: true
+  height: 100vh
+  animated: true
+
+# ========== 打字机效果 ==========
+typed:
+  enable: true
+  strings:
+    - "困意如潮水般涌来"
+    - "欢迎来到 Lucky 的小窝"
+    - "二次元 · 技术 · 生活"
+  typeSpeed: 100
+  backSpeed: 50
+  loop: true
+
+# ========== 导航菜单 ==========
+menu:
+  首页: / || anzhiyu-icon-home
+  文章: /archives/ || anzhiyu-icon-box-archive
+  分类: /categories/ || anzhiyu-icon-shapes
+  标签: /tags/ || anzhiyu-icon-tags
+  关于: /about/ || anzhiyu-icon-user
+
+# ========== 社交链接（改成你自己的） ==========
+social:
+  Github: https://github.com/Lucky090820 || anzhiyu-icon-github
+
+# ========== 侧边栏 ==========
+aside:
+  enable: true
+  position: right
+  button: true
+  card_author:
+    enable: true
+    name: Lucky
+    description: "困意如潮水般涌来 🌊"
+    avatar: /img/avatar/avatar.jpg
+    button:
+      enable: true
+      icon: anzhiyu-icon-add
+      text: 关注我
+      link: https://github.com/Lucky090820
+  card_announcement:
+    enable: true
+    content: "欢迎来到我的小窝！这里是 Lucky 的二次元博客 ✨"
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+    title: 最新文章
+  card_categories:
+    enable: true
+    limit: 8
+    expand: true
+  card_tags:
+    enable: true
+    limit: 20
+    color: true
+  card_archives:
+    enable: true
+    limit: 10
+    type: month
+  card_webinfo:
+    enable: true
+
+# ========== 搜索 ==========
+local_search:
+  enable: true
+  preload: true
+  CDN:
+    search: /js/search.js
+    instantsearch: /js/instantsearch.js
+
+algolia_search:
+  enable: false
+
+# ========== 代码高亮 ==========
+highlight:
+  enable: true
+  line_number: true
+  copy: true
+  wrap: true
+  highlight_theme: mac
+  code_block_copy: true
+  code_block_expand: true
+  code_block_shrink:
+    enable: true
+    line: 20
+
+# ========== 文章设置 ==========
+post:
+  meta:
+    date_type: both
+    categories: true
+    tags: true
+    word_count: true
+    read_time: true
+  ai:
+    enable: true
+    button_text: AI 摘要
+    placeholder: 正在思考中...
+  copyright:
+    enable: true
+    author: Lucky
+    link: https://Lucky090820.github.io
+  top_img: true
+  cover: true
+  footer:
+    enable: true
+    since: 2026
+    author: Lucky
+    copyright: CC BY-NC-SA 4.0
+
+# ========== 评论（Gitalk，需要配 OAuth） ==========
+comment:
+  enable: false
+  use: gitalk
+  text: true
+  lazyload: false
+  count: true
+  card_post_count: false
+
+# ========== Live2D 看板娘 ==========
+live2d:
+  enable: true
+  model:
+    use: live2d-widget-model-hijiki
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+    scale: 0.5
+
+# ========== 右键菜单 ==========
+right_menu:
+  enable: true
+  mode: default
+  custom:
+    - name: 首页
+      link: /
+    - name: 分类
+      link: /categories/
+    - name: 标签
+      link: /tags/
+    - name: 归档
+      link: /archives/
+    - name: 随机文章
+      link: javascript:toRandomPost()
+
+# ========== 背景特效 ==========
+canvas:
+  snow:
+    enable: false
+  sparkle:
+    enable: true
+    color: "#7B68EE"
+  ribbon:
+    enable: false
+
+# ========== PWA ==========
+pwa:
+  enable: true
+  manifest: /manifest.json
+  apple_touch_icon: /img/avatar/avatar.jpg
+  favicon: /favicon.ico
+
+# ========== 音乐球 ==========
+aplayer:
+  enable: false
+
+# ========== 统计 ==========
+analytics:
+  enable: false
+
+# ========== 页脚 ==========
+footer:
+  since: 2026
+  icon:
+    name: anzhiyu-icon-heart
+    color: "#FF6B9D"
+    animate: true
+  copyright:
+  author: Lucky
+  link:
+    enable: true
+    url: https://github.com/Lucky090820
+    text: Github
+  word_count: true
+  runtimes: true
+  runtimesStart: 2026-07-01
+  theme:
+    enable: true
+    name: AnZhiyu
+    link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+  total_word_count: false
+
+# ========== 自定义文件 ==========
+custom_css:
+  - /css/custom.css
+custom_js:
+  - /js/custom.js
